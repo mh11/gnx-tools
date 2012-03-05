@@ -61,8 +61,11 @@ public class CalculateGNx {
 
 
 	private static void printHelp(PrintStream out) {
-		out.println("<program> [-min <val>] [-nx 25,50,75] [-g <genomeSize>] <list of fasta files>");
-		out.println("possible list of fasta files:  ");
+		out.println("gnx [-min <val>] [-nx 25,50,75] [-g <genomeSize>] <list of fasta files>");
+		out.println("-min   Minimum bp length of a sequence to be considered");
+		out.println("-nx    Nx values to be printed seperated by ',' e.g. 50 for N50, 25 for N25");
+		out.println("-g     genome size to be used to calculte Nx values");
+		out.println("<list of fasta files>  ");
 		out.println("     o /path/to/file.fa");
 		out.println("     o use '-' for standard input");
 		out.println("     o file-a.fa file-b.fa for a list of files");
@@ -157,6 +160,7 @@ public class CalculateGNx {
 					pfa.setIn(null);
 				}
 			}
+			System.out.println("");
 			pfa.reset();
 		}
 	}
