@@ -1,1 +1,17 @@
 Basic Genome assembly statistic tool to calculate Nx values e.g. N50, N10, NG50
+
+INSTALLATION
+
+a) Download git repository
+b) Compile java classes
+   # in gnx-tools folder run
+   javac -d bin/ src/uk/ac/ebi/gnx/*
+c) package jar file
+   # in gnx-tools foder run
+   ant -f package.xml
+d) execute jar file
+   java -jar nx.jar
+
+DONE
+
+
