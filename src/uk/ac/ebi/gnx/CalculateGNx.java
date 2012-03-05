@@ -121,11 +121,17 @@ public class CalculateGNx {
 				}
 				pfa.process();
 				// TODO process results
-				Collections.sort(pfa.getLen());
-				Collections.reverse(pfa.getLen());
 				System.out.println("Results for " + f );
 				System.out.println("Total number of sequences:          " + pfa.getLen().size());
 				System.out.println("Total length of sequences:          " + pfa.getTotalCnt() + " bp");
+				// Sort
+				Collections.sort(pfa.getLen());
+				System.out.println("Shortest sequence length :          " + (pfa.getLen().isEmpty()?0:pfa.getLen().get(0)));
+				
+				// Reverse
+				Collections.reverse(pfa.getLen());
+				System.out.println("Longest sequence length  :          " + (pfa.getLen().isEmpty()?0:pfa.getLen().get(0)));
+				
 				gSize = 0;
 				if(genomeSize < 0){
 					gSize = pfa.getTotalCnt();
