@@ -5,6 +5,7 @@ INSTALLATION
 a) Download git repository
 b) Compile java classes
    # in gnx-tools folder run
+   mkdir bin
    javac -d bin/ src/uk/ac/ebi/gnx/*
 c) package jar file
    # in gnx-tools foder run
