@@ -4,7 +4,7 @@
 	<!-- javac -d bin/ src/uk/ac/ebi/gnx/*  -->
     <!--ANT 1.7 is required                                        -->
     <target name="create_run_jar">
-        <jar destfile="nx.jar" filesetmanifest="mergewithoutmain">
+        <jar destfile="gnx.jar" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="uk.ac.ebi.gnx.CalculateGNx"/>
                 <attribute name="Class-Path" value="."/>

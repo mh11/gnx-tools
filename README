@@ -11,7 +11,7 @@ c) package jar file
    # in gnx-tools foder run
    ant -f package.xml
 d) execute jar file
-   java -jar nx.jar
+   java -jar gnx.jar
 
 DONE
 
